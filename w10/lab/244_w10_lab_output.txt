@@ -1,0 +1,21 @@
+These students have invalid student ids:
+2345 Lisa Simpson
+4567 Ralph Wiggum
+All employee have valid employee ids
+These integer values are invalid: 
+2
+67
+These cars have invalid license plates:
+AFGHIJ Nissan Maxima
+These character values are invalid: 
+A
+e
+d
+e
+l
+p
+x
+cameron.gray@matrix:~/?????> exit
+exit
+
+Script done on Sun 30 Jul 2017 09:20:49 AM EDT

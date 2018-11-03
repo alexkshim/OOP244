@@ -1,0 +1,195 @@
+// OOP244 Workshop 10 - Templates 
+
+// File: reflect.txt
+
+// Version: 1.0
+
+// Date: 2017/07/16
+
+// Author: Fardad Soleimanloo
+
+// Kyuyoung Shim(102562162)  2017-08-03
+
+/////////////////////////////////////////////
+
+WORKSHOP QUESTIONS:
+
+1-	Name all different types of polymorphism with an example
+-> According to the lecture note, there are 4 types of polymorphism. The examples below are based on the lecture note.
+Ad-Hoc
+- Coercion Polymorphism
+- Overloading Polymorphism
+Universal
+- Inclusion Polymorphism
+- Parametric Polymorphism
+
+--- Example of Coericion Polymorphism ---
+ // Ad-Hoc Polymorphism - Coercion
+ // coercion.cpp
+
+ #include <iostream>
+
+ // One function definition:
+
+ void display(int a) {
+     std::cout << "One argument (" << a << ')'; 
+ }
+
+ int main( ) {
+
+     display(10);
+     std::cout << std::endl;
+     display(12.6); // narrowing
+     std::cout << std::endl;
+     display('A'); // promotion
+     std::cout << std::endl;
+ }
+
+
+---Example of Overloading Polymorphism---
+ // Ad-Hoc Polymorphism - Overloading
+ // overloading.cpp
+
+ #include <iostream>
+
+ // Two function definitions:
+
+ void display() {
+     std::cout << "No arguments";
+ }
+
+ void display(int a) {
+     std::cout << "One argument (" << a << ')'; 
+ }
+
+ int main( ) {
+
+     display();
+     std::cout << std::endl;
+     display(10);
+     std::cout << std::endl;
+ }
+
+---Example of Inclusion Polymorphism---
+ // Universal Polymorphism - Inclusion
+ // inclusion.cpp
+
+ #include <iostream>
+ #include "Course.h"
+ using std::cout;
+ using std::endl;
+
+ int main( ) {
+     Course abc123("Intro to OO")
+     HybridCourse abc124("Intro to OO*");
+     cout << abc123.assessments() << endl;
+     cout << abc123.mode() << endl;
+     cout << abc124.assessments() << endl; 
+     cout << abc124.mode() << endl;
+ }
+
+
+---Example of Parametric Polymorphism---
+ // Universal Polymorphism - Parametric
+ // parametric.cpp
+
+ #include <iostream>
+
+ template<typename T>
+ void sort(T* a, int n) {
+     int i, j;
+     T temp;
+
+     for (i = n - 1; i > 0; i--) {
+         for (j = 0; j < i; j++) {
+             if (a[j] > a[j+1]) {
+                 temp = a[j];
+                 a[j] = a[j+1];
+                 a[j+1] = temp;
+             }
+         }
+     }
+ }
+
+ class Student {
+     int no;
+     // other data - omitted here
+   public:
+     Student(int n = 0) : no(n) {}
+     bool operator>(const Student& rhs) const {
+         return no > rhs.no;
+     }
+     void display(std::ostream& os) const {
+         os << no << std::endl;
+     }
+ };
+
+ int main( ) {
+     int m[] = {189, 843, 321};
+     Student s[] = {Student(1256), Student(1267), Student(1234)}; 
+
+     sort(m, 3);
+     for (int i = 0; i < 3; i++)
+         std::cout << m[i] << std::endl;
+
+     sort(s, 3);
+     for (int i = 0; i < 3; i++)
+         s[i].display(std::cout);
+ }
+
+
+
+2-	What category of polymorphism does a template fall?
+-> Perametric polymorphism (generic polymorphism) at compile-time  
+
+
+3-	What happens if a function template is never called?
+-> The function templated will automatically be deleted.
+
+
+SUBJECT SURVEY:
+4-	What was the most interesting thing you learned this semester?
+The features of polymorphism
+
+5-	Do you feel that the quizzes about the week’s readings helped you learn more than you might have otherwise done.
+Some might help
+
+6-	Are there any things that you particularly like about the way that the course is delivered?
+Nothing
+
+7-	Are there any things that you particularly dislike about the way that the course is delivered?
+Every section has their own difficulty which is way too much different from each other but I accept it.
+Especially I dislike mid-term and its grading criteria. 
+
+8-	Is there anything you would like to see added to the way the course is delivered?
+Nothing
+
+9-	How would you rate your level of understanding of the course topics? 
+a.	Very good
+b.	Pretty good
+c.	Adequate
+--->d.	Poor
+
+10-	Did you enjoy doing the workshops? Why?
+I didn't. some OOP244 workshops did not clearly explain what's what so I wasted too much time on fixing errors 
+which did not happen when it comes to IPC144. 
+
+11-	The content of this course was
+a.	Too little
+b.	Just right
+c.	Too much
+--->b
+
+
+
+Quiz 10 reviews:
+
+question 3
+-> the answer is
+1234567890
+********27
+
+question 4
+-> the answer is
+cin.good();
+cin.fail();

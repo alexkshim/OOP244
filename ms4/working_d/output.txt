@@ -1,0 +1,21 @@
+Script started on Sun 16 Jul 2017 03:16:28 PM EDT
+kshim3@matrix:~/oop244/ms4> ms4
+Empty Prouduct:
+
+U("4321", "Rice"):
+4: R, qty: 134521865, qtyNeeded:-1219555340, Cost: -0.00
+Please enter the following information:
+Sku: 1234
+Name(no spaces) : Blanket
+Qty : 12
+Qty Needed : 23
+Is taxed ? (1 / 0) : 1
+Price : 12.34
+Enter Product info: 
+Sku: 1234
+Name (no spaces): Blanket
+Segmentation fault
+kshim3@matrix:~/oop244/ms4> exit
+exit
+
+Script done on Sun 16 Jul 2017 03:16:48 PM EDT

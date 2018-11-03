@@ -1,0 +1,19 @@
+Script started on Thu 01 Jun 2017 12:42:19 PM EDT
+kshim3@matrix:~/oop244/w3/lab> ws
+Canada Revenue Agency Account App
+=================================
+
+Please enter your family name: Doe
+Please enter your given name: Jane
+Please enter your social insurance number (0 to quit): 193456787
+----------------------------------------
+Testing the display function
+----------------------------------------
+Family Name: Doe
+Given Name : Jane
+CRA Account: 193456787
+----------------------------------------
+kshim3@matrix:~/oop244/w3/lab> exit
+exit
+
+Script done on Thu 01 Jun 2017 12:42:32 PM EDT

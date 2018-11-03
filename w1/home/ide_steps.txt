@@ -1,0 +1,9 @@
+Open the visual studio and create a new project.
+
+Once you create, select which language are you gonna use, the directory name and location. I may choose C++ format with win32 console application.
+
+the next step will be either using windows application or console application. In oop244, I may use console application and uncheck precompiled header but empty project.
+
+in the source files, add new item and choose c++ file. Name it as .cpp after whatever so that C++ compiler possibly reads.
+
+write the codes and compile it.

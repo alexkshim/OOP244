@@ -1,0 +1,10 @@
+
+In line number 12 of your output:
+The output should be:
+b equals 5/6
+But your output is: 
+b equals 1/3
+         ^
+---------|
+Professor's character ASCII code: hex(35), dec(53)
+un-matched character ASCII code: hex(31), dec(49)

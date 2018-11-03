@@ -1,0 +1,24 @@
+Script started on Tue 11 Jul 2017 05:10:49 AM EDT
+cameron.gray@matrix:~/_staging/244/m3> ws
+Linear: one two 
+As is: 
+one
+two
+
+Enter the following: 
+three<ENTER>
+four<ENTER>
+Ctrl-D
+
+three
+four
+one two three four 
+one
+two
+three
+four
+
+cameron.gray@matrix:~/_staging/244/m3> exit
+exit
+
+Script done on Tue 11 Jul 2017 05:11:00 AM EDT

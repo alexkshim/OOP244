@@ -1,0 +1,43 @@
+1.	What is the difference between an abstract base class and a concrete class?
+-> The main difference between these is abstract base class does not provide implementation for its pure virtual functions while
+concrete class does. In other words, concrete class has both definition and declaration(prototype) of the member functions, however,
+abstract class just has declration of the member functions.
+
+2.	Why do we need to have a pure virtual function in a base class?
+-> In order to use the current(not the one that is on the top of the hierarchy inheritance) class's definition of the member functions.
+
+3.	Explain what have you learned in this workshop.
+-> How to use Polymorphism in C++
+
+Quiz 8 Reflection
+
+1. The answer is "This polymorphism"
+"This polymorphism, which perfects the separation of interfaces from implementations, is called parametric or generic polymorphism",
+according to the lecture note.
+
+2. The answer is "a concrete class is a derived class that implements that interface", according to the lecture note.
+
+3. The answer is "An abstract"
+As the lecture note explains, "An abstract class is a class that contains or inherits a pure virtual function.
+Because the class provides no implementation(s) for its pure virtual function(s), the compiler cannot instantiate the class.  Any attempt to create an instance of an abstract base class generates a compiler error".
+
+4. I got correct answer for this.
+
+5. I got correct answer for this.
+
+6. The answer is "virtual void print(std::ostream&) const = 0;"
+The lecture note states "The principal component of an abstract base class is a pure virtual member function.  
+Pure refers to the lack of any implementation detail. That is, a pure virtual function is a signature without a definition. The client code only requires access to the signature".
+"virtual void display(std::ostream&) const = 0;"
+
+7. I got correct answer for this.
+
+8. The answer is a.
+"static_cast<Type>(expression) performs limited type checking.  It rejects conversions between pointer and non-pointer types", according to the lecture note.
+
+9. 
+a->Templated Function
+
+b->Class Template
+
+

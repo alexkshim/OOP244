@@ -1,0 +1,50 @@
+1.	Discuss why the operator+= should return a reference to Fraction.
+-because the current has to remain changed by the operator+= so that the object value in the class can be modified by its reference.
+
+
+2.	List your uses of the pointer to the current object to simplify your code.
+-What that is related to use of pointer, that I remember, and that I used in this workshop is '*this'.
+I used '*this' as a returning value to simply return the whole object of Fraction.
+And maybe I used 'this->member's name' as well to point specific members in the class. 
+
+
+3.	Identify the temporary objects in the tester module.
+-I actually don't get this question a bit. If it means just what are those temporary objects in the tester module,
+the answer would be Fraction a, Fraction b, Fraction c, Fraction d, and Fraction e.
+the first parameter(element) of the object is the left operand and the second another one is right operand. 
+
+
+4.	Identify simplifications that you could make to your class without affecting the interface to the client code.
+- I reused '*this = Fraction::operator+(fracObj);' instead of writing many lines of calculation that is exactly the same thing that operator+ has.
+Moreover, I used the same name of the constructors with different number of the parameters(signature).
+In addition, isEmpty(); and reduce(); functions are used many times to reduce redundant waste of lines and complexity.
+
+
+5.	Explain what you have learned in this workshop.
+- I learned how to use a member function and operator overloading.
+
+
+Quiz 5 Reflection
+
+1. The answer is b.
+- "A binary operation consists of one operator and two operands", according to the lecture note, thus, this gets two parameters.
+
+
+2. The answer is friendship.
+- "Friendship grants helper functions access to the private members of a class.  
+By granting friendship status, a class lets a helper function access to any of its private members: data members or member functions.  
+Friendship minimizes class bloat", according to the lecture note, therefore, to allow a helper function to access a private member of a class, the user should use friendship.
+
+
+3. The answer is
+a: A operator+=(double someVal, const A object);
+b: return object + someVal;
+
+4. The answer is
+B:7
+A:0
+B:5
+~:5
+Bye
+~:12
+~:7

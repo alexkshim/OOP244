@@ -1,0 +1,10 @@
+
+In line number 6 of your output:
+The output should be:
+4321: Rice, qty: 0, qtyNeeded:0, Cost: 0.00
+But your output is: 
+4: R, qty: 134521865, qtyNeeded:-1219555340, Cost: -0.00
+ ^
+-|
+Professor's character ASCII code: hex(33), dec(51)
+un-matched character ASCII code: hex(3a), dec(58)

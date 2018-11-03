@@ -1,0 +1,34 @@
+Script started on Sun 30 Jul 2017 04:31:19 AM EDT
+kshim3@matrix:~/oop244/ms5_1> ms5
+--AmaProduct test:
+----Taxed validation test:
+Enter the following: 
+Sku: abc
+Name: abc
+Unit: abc
+Taxed: a
+
+Sku: abc
+Name: abc
+Unit: abc
+Taxed? (y/n): a
+Passed!
+Message should be:  Only (Y)es or (N)o are acceptable
+Your Error message: Only (Y)es or (N)o are acceptable
+****press enter to continue...
+----Price validation test:
+Enter the following: 
+Sku: abc
+Name: abc
+Unit: abc
+Taxed: y
+Price: abc
+
+Sku: abc
+Name: abc
+Unit: abc
+Taxed? (y/n): ^C
+kshim3@matrix:~/oop244/ms5_1> exit
+exit
+
+Script done on Sun 30 Jul 2017 04:31:43 AM EDT

@@ -1,0 +1,10 @@
+
+In line number 36 of your output:
+The output should be:
+Total population of SICT: 925913
+But your output is: 
+Total population of all Kingdoms: 925913
+                    ^
+--------------------|
+Professor's character ASCII code: hex(53), dec(83)
+un-matched character ASCII code: hex(61), dec(97)

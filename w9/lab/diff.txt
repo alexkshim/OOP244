@@ -1,0 +1,10 @@
+
+In line number 15 of your output:
+The output should be:
+the quick brown fox jumped over the lazy dog
+But your output is: 
+exit
+^
+|
+Professor's character ASCII code: hex(74), dec(116)
+un-matched character ASCII code: hex(65), dec(101)

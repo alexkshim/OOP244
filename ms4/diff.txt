@@ -1,0 +1,10 @@
+
+In line number 26 of your output:
+The output should be:
+1234: Blanket, qty: 12, qtyNeeded:23, Cost: 13.94
+But your output is: 
+1234: Blanketÿÿÿÿÿq!, qty: 0, qtyNeeded:23, Cost: 13.94
+             ^
+-------------|
+Professor's character ASCII code: hex(2c), dec(44)
+un-matched character ASCII code: hex(ffffffff), dec(-1)

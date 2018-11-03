@@ -1,0 +1,62 @@
+1)	What is the size of each C-style character string that stores a name for the account? Why?
+- the size of it is 41 because this should have '\0' at the end while having 40 chars.
+
+
+2)	Using examples from your own code explain which features of object orien-tation you used.
+- 
+void set(const char* familyName, const char* givenName, int sin);
+void set(int year, double balance);
+
+
+like using these two functions with the different number of parameters and the same name, the user can overload one function to another one because the compiler of C++ is able to distinguish by knowing its different signature.
+
+Plus, we use constructors and destructors to initialize the value in advance and deallowcate dynamic memory that we might use.
+
+3)	Your class declares two member functions named set(...).  In C, this would generate an error.  Explain why this is allowed in C++.
+- C does not know what is the difference of the functions if the functions' names are the same. But C++ knows it if the number of parameters are different.
+
+
+4)	How do you ensure that the balance/refund displays to 2 decimal places?
+- I will regard this as meaning of only the refund due. I included "#include <iomanip>" and used "<< fixed << setprecision(2) <<" in the cout to print two decimal points. The method was quite hard to figure out.
+
+
+5)	What do you need to check before storing data for a tax year?
+- I should check if m_years is equal to zero.
+
+
+6)	What have you learned during this workshop?
+- How to use public and private members of a class usefully. This was its big picture.
+
+
+Quiz 3 Reflection:
+
+1. the answer is b.
+- Because we use a class many times we want with a different name of the object but these are originally declared in the same class once.
+
+
+2. the answer is b.
+-I answered correctly.
+
+
+3. the answer is class OOP244(){};
+-I answered correctly.
+
+
+4. the answer is ~OOP244();
+-A tilde before the name of the class for the destructor.
+
+
+5. the answer is false.
+-Because the compiler does not make any constrcutor as long as there is any constructor.
+
+
+6. the answer is "const OOP244&" for the first line of the answer, and "return *this"
+- const OOP244& is part of returning which means the address of the class, after this is the part of object. return *this will return whole things in the class.
+
+
+7. the answer is 
+- at the same time making an object.
+
+
+8. the answer is
+- when going out of the scope.

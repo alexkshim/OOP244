@@ -1,0 +1,77 @@
+1.	What is a namespace? Explain its purpose.
+
+-According to the lecture note of oop244 written the professor, It says "A namespace is a scope for the entities that it encloses".
+What I got from reading the entire explaination is a namespace is created for avoiding duplication of using the same variable names when merging more than
+two codes into one. Basically, what I say is that in one program mixed with more than two, the user are de fecto able to change or use the same name of the
+each variable differently through  preceding its identifier with the namespace's identifier, using a double colon.
+
+To sum up, its purpose is to avoid duplication of the name of variable when the user complies program that the same name of the variables declared.
+
+
+
+
+2.	Why are header files needed? Explain.
+
+-To write function prototypes not in the cpp files, but somewhere else. For the seperation of this, header files are used. 
+
+
+
+
+3.	In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+
+-Because if header files are compiled, something included in the programs will be done twice and this is a vital error.
+To avoid this, #pragma is usually used at the top of the header files not to compile #include statements twice. 
+There is another way, that using #ifndef and #endif.
+
+
+
+
+4.	Explain why you should never include .cpp files in another file.
+
+-What if the user is including .cpp files in another file? Since the .cpp files firstly get compiled and wait for all the others and the main .cpp file compiled, if .cpp
+file is included and compiled in another file again, this will cause duplication on the compiler.
+
+It already becomes object files and if the another same is included in another file and compiled again, it does not make any sense. It is an error.
+
+
+
+
+5.	Is there any benefit to put the source code of a program in modules or should we put everything in a single file? Explain.
+
+-We should not put everything in a single file in most case. Modular programming is important for making codes look easy so that can help
+other developers understand better.
+
+each of the code, for example, cout and cin require <iostream>. If so, #include <iostream> will be used for the file using cout and cin. However,
+does it represent anything else? No. And there are a lot more cases using any other functions like cout or cin.
+To represent these things more simply, this needs to be sorted and the method is seperating them into several header files.
+Now users clearly know which one(something after #include) is used for what(specific functions).
+
+
+
+
+6.	Explain what have you learned on this workshop.
+
+-How to seperate one big code into header files and source files and why I should do this.
+
+
+
+
+Extra. Quiz 1 Reflection
+
+Though I have not skipped the class, since I have not recieved my quiz back, I would summary all the answers and why.
+
+1. auto will automatically change its type based on its initialized value. So the answer is integer type.
+
+2. The answer is false. According to the lecture note of oop244, it says, "The C++ language distinguishes between declarations and definitions and stipulates the one-definition rule".
+
+3. The order of the parameter types, according to the lecture note.
+
+4. first blank line - int* sku, double* price | second line = Item. | third line - apple->sku, apple->price // I don't really know the exact answers.
+
+5. float* array[6]; // float means it is float type and * means pointer and [6] means its size is 6.
+
+6. double // type should be the same.
+
+7. delete myCourses[] // it removes memory leaks
+
+8. set struct Item { int sku; double price; }; // Actually, I don't know. Can you please upload all the answers...

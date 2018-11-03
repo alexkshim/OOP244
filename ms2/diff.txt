@@ -1,0 +1,10 @@
+
+In line number 5 of your output:
+The output should be:
+Some error message that is really long long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  lo
+But your output is: 
+
+^
+|
+Professor's character ASCII code: hex(53), dec(83)
+un-matched character ASCII code: hex(0), dec(0)

@@ -1,0 +1,10 @@
+
+In line number 6 of your output:
+The output should be:
+Fraction c(-5, 15); // c = no fraction stored
+But your output is: 
+Fraction c(-5, 15); // c = 1/134514081
+                           ^
+---------------------------|
+Professor's character ASCII code: hex(6e), dec(110)
+un-matched character ASCII code: hex(31), dec(49)

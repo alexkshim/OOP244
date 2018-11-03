@@ -1,0 +1,15 @@
+1)	Explain why the copy assignment operator checks for self-assignment before doing anything else.
+-Because there is no need to initialize anything to the same thing. If the object(parameter) and constructor has the same value, it should not copy the object(parameter).
+
+2)	Explain why a class that uses dynamic memory to hold its resources needs custom definitions of its copy constructor and its copy assignment operator.
+-Because you don't know how much memory this will allocate and it has to store the value over and over if required.
+
+3)	How did you avoid duplication of code?
+-Normally, I can use a function that holds validatity checking and reuse it to whatever needed.
+
+4)	List what you have learned in completing this workshop
+-How to use operators with dynamically allocated memory.
+
+Quiz Reflection
+
+There was no quiz due to mid-term exam.

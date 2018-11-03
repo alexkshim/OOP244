@@ -1,0 +1,16 @@
+1.	What is a namespace? Explain its purpose.
+
+
+2.	Why are header files needed? Explain.
+
+
+3.	In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+
+
+4.	Explain why you should never include .cpp files in another file.
+
+
+5.	Is there any benefit to put the source code of a program in modules or should we put everything in a single file? Explain.
+
+
+6.	Explain what have you learned on this workshop.

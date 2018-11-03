@@ -1,0 +1,42 @@
+Script started on Tue 30 May 2017 07:12:34 PM EDT
+kshim3@matrix:~/oop244/w2/home> ws
+==========
+Input data
+==========
+Enter the number of kingdoms: 2
+Kingdom #1: 
+Enter the name of the kingdom: The_Vale
+Enter the number people living in The_Vale: 234567
+Kingdom #2: 
+Enter the name of the kingdom: The_Reach
+Enter the number people living in The_Reach: 567890
+==========
+
+------------------------------
+The first kingdom entered is
+------------------------------
+The_Vale, population 234567
+------------------------------
+
+==========
+Input data
+==========
+Kingdom #3: 
+Enter the name of the kingdom: The_Riverlands
+Enter the number people living in The_Riverlands: 123456
+==========
+
+------------------------------
+Kingdoms of SICT
+------------------------------
+1. The_Vale, population 234567
+2. The_Reach, population 567890
+3. The_Riverlands, population 123456
+------------------------------
+Total population of SICT: 925913
+------------------------------
+
+kshim3@matrix:~/oop244/w2/home> exit
+exit
+
+Script done on Tue 30 May 2017 07:13:11 PM EDT

@@ -1,0 +1,38 @@
+1)	What happens to dynamic memory if it is not deallocated?
+-According to the lecture note,  "that memory becomes inaccessible and irrecoverable until the application returns control to the operating system".
+
+2)	Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+-Because the existing array of dynamically allocated memory is already fixed to allocate that amount of memory. Making a new one and increasing is the way to do this in this workshop2 at-home part.
+
+3)	The Kingdom structure stores the name in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name. Do we have a memory leak there? Ex-plain.
+-Since Static memory is not needed to be deleted by "delete[] name;" unlike dynamic memory, we do not have any memory leak.
+
+4)	In your program, there are two display(...) functions. How does the compiler know which one should be called from your main? Explain.
+-Since the functions have the different number of its peremeters, these have different signature. Compiler will know it.
+
+5)	Explain what have you learned in this workshop.
+-How to use overloading and dynamic memory in c++
+
+
+Quiz 2 Reflection:
+
+1. The answer is const.
+-Something should not be changed is const.
+
+2. The answer is Myclass::
+-I got correct answer on this question.
+
+3. The answer is 
+-class OOP244 const{ -> to make it unmodifiable
+ void display() -> it needs its parameters
+ display(sectionAB.noStudents) -> it neeeds its arguments 
+
+4.ignore();
+-Flushing the cin buffer.
+
+5.width();
+-According to the lecture note, "The width(int) member function specifies the minimum width of the next output field:".
+
+6. cout.precision(5);
+-According to the lecture note, "The precision() member function sets the precision of subsequent floating-point fields".
+Since the number is 2.71828182845, the very first number '2' should be included to show 4 decimal places.

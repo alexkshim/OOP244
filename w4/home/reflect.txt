@@ -1,0 +1,90 @@
+1)	What is meant by a safe empty state? What other safe empty states could you choose for the Passenger type? Explain why.
+- Making into NULL point, '\0' or zero so that those variables modified is not pointing unsafe garbage address. For example, in my code,
+
+	Passenger::Passenger() {
+		passenger_name[0] = '\0';
+		destination[0] = '\0';
+		yearOfDepart = 0;
+		monthOfDepart = 0;
+		dayOfDepart = 0;
+	}
+
+those are directed to safe empty states.
+
+
+2)	Describe how you would modify the code to minimize duplication using the syntax that you have covered in the course to date.
+-I am actually quite not getting what exactly this means, but as far as I know some duplication about the syntax, there are many methods of it. For instance,
+I can use this-> to avoid duplication syntax errors when I use class and parameters with the same name. Below is what I used in my code.
+
+this->dayOfDepart
+
+Or if it is asking about signature, I use the same name of many functions just with different number of parameters. For example,
+
+Passenger();
+Passenger(const char* nameOfPsg, const char* nameOfDsn, const int& years, const int& months, const int& days);
+
+I guess you are questioning this.
+
+
+3)	Explain the principal benefit of minimizing code duplication.
+- It is because it minimizes redundancy. Not good for the modularity. Just why don't use something already made and waste long lines over and over?
+
+
+4)	Explain why the canTravelWith(...) member function can access the private data variables of the referenced object.
+-Obviously, it called its constructor in the class. public members in the class are able to access private members in the class. Therefore, canTravelWith function is definitely able to access those private members in the class.
+
+
+5)	Describe how you would improve your code to allow for changes in the sizes of the arrays holding the name and destination data.
+-As described for the feedback in the email, define its length like 
+
+#define MAX_NAME_LEN 32
+
+and simply use this in my codes. Whenever I need to increment or decrement the length, change only one value of #define MAX_NAME_LEN 32 and that is that.
+
+
+6)	What do you need to correct when you use the strncpy(...) function?
+-According to the lecture, it is better to include <cstring> and the first argument will be implemented(replaced) by the second argument and the user must provide its length of the string in the third argument.
+
+
+7)	Explain what you have learned in this workshop.
+-How to upgrade display and how to use different constructors with the same name passing by references.
+
+Quiz 4 Reflection
+
+1. The answer is a
+-A binary operation consists of one operator and two operands.  In a binary member operator, the left operand is the current object 
+and the member function takes one explicit parameter: the right operand, according to the lecture note.
+
+It is clearly saying a binary operation consists of one operator. Not two.
+
+
+2. The answer is conditional
+-ternary - three operands - conditional operator, according to the lecture note
+
+
+3. The answer is
+post-fix: return_type operator++(int)  or  Type operator--(int)
+pre-fix: Type& operator++()  or  Type& operator--()
+
+-According to the lecture note.
+
+
+4. The answer is
+OOP244(const int studentNum);
+
+-cast from an int, said itself.
+
+
+5. The answer is
+char studentName[MAX_NAME_LENGTH];
+int studentNum;
+
+-Because it is string.
+
+
+6. The answer is
+Shallow copy: int studentNum;
+Deep copy: char studentName[MAX_NAME_LENGTH];
+
+-A string needs deep copy. We expect the resource data in the other object to remain unchanged, according to the lecture note.
+

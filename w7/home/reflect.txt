@@ -1,0 +1,69 @@
+1.	Why did we choose m_health to be a signed integer? (Hint: what happens if the Hero has a health of 1, and someone does 2 points of damage to them.)
+Answer--->To prevent the value from going under or equal to the zero. For this, this should be signed value and 1 is appropriate.
+
+2.	Does the Hero class need to know about the existence of the class SuperHero? (Hint: do a search in Hero.cpp, does the word “SuperHero” appear anywhere in it?) How about the reverse, does SuperHero know about the Hero class?
+Answer--->No. 'Hero' class does not need to know about 'SuperHero' class since 'Hero' class is the on the top of the inheritance
+hierarchy. However, 'SuperHero' class is derived from 'Hero' class so this 'SuperHero' class should know about the existence of the class 'Hero'
+For example, programming language C does not need to know about C++ because C is the mother language of C++.
+However, since C++ is made based on C, C++ certainly needs to know about C because it is including functional stuff of C.
+In the same vein, we can use printf(); in both C and C++ but we are not allowed to use cout in C but C++. 
+
+3.	The program prints out “AncientBattle!” when 2 Heros fight. It prints out “SuperFight!” when 2 SuperHeros fight. When you tried to make a Hero fight a SuperHero, what did it print out?
+Answer---> it printed “AncientBattle!”. Why? that's because the display function of 'Hero' format is recognizable for both each member of 'Hero' and 'SuperHero' but not vice versa ('SuperHero' class format invalid)
+
+4.	True or False: are the following a valid program definition for main? 
+int main()
+{
+  Hero ("Achilles",  20, 6) * Hero  ("Hector",    30, 5);
+}
+//Answer---> True. it is able to be compiled without any problem.
+
+how about this?
+
+int main()
+{
+  ( Hero ("Achilles",  20, 6) * Hero ("Hector",    30, 5) ) 
+                              *
+  ( Hero ("Atalanta",  10, 3) * Hero ("Hippolyta", 10, 2) );
+}
+//Answer---> True. it is able to be compiled without any problem.
+
+Quiz 6 Reflection -> Since I missed the quiz 6, I write all the answers of it.
+
+1.
+std::istream& operator>>
+std::ostream& operator<<
+according to the lecture note, "these are the overloaded insertion and extraction operators".
+
+2.
+std::ifstream
+according to the lecture note, "this class includes a no-argument constructor as well as one that receives the address of a
+C-style null-terminated string containing the file name".
+
+3.
+std::cerr
+this means standard error based on the lecture note.
+
+4.
+std::ifstream f("temp.txt"); // for reading
+
+5.
+answer is b.
+according to the lecture note, 
+"is_open() member function called on a file object returns the current state of the object's connection to a file:"
+"To connect a file to an existing file object, we call the open() member function on the object"
+therefore, answer is b.
+
+6. 
+answer is False.
+
+7.
+std::ofstream fout("student.txt")
+
+
+
+
+Quiz 7 Reflection -> Since I got wrong answers of question 1 and 4, I only write those answers.
+
+1. this polymorphic function also includes int number();. That is why I got only 2 marks out of 3.
+4. correct answer is early binding / late binding. These are the two types of binding for the member functions in a class.
